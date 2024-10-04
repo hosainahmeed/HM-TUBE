@@ -40,9 +40,23 @@
         <!-- videos categories -->
         <main id="videos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4 py-12">
         </main>
+
+
+
+        <dialog id="customModal" class="modal modal-bottom sm:modal-middle px-2 py-12">
+            <div class="modal-box overflow-y-auto">
+                <h3 class="modalTitle text-lg font-bold">Hello!</h3>
+                <p class="py-4">Press ESC key or click the button below to close</p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <button class="btn btn-sm btn-circle btn-ghost absolute z-50 left-2 bottom-2">✕</button>
+                      </form>
+                </div>
+            </div>
+        </dialog>
+
     </header>
 </body>
-<script src="main.js"></script>
 <script src="./scripts/video.js"></script>
 
 </html>
