@@ -11,15 +11,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="w-11/12 mx-auto">
+<body class="w-11/12 mx-auto px-2">
     <header class="py-4">
 
         <!-- navbar create -->
+
         <nav class="flex sticky top-0 justify-between items-center">
             <div class="logo">
                 <img class="w-32" src="./assets/Logo.png" alt="">
             </div>
-            <div class="search">
+            <div class="search hidden md:block">
                 <label class="input input-bordered flex items-center gap-2">
                     <input type="text" class="grow" placeholder="Search" />
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
@@ -31,9 +32,17 @@
             </div>
             <button class="btn btn-info text-white text-base font-semibold  ">Sort by view</button>
         </nav>
+
+
         <div class="divider"></div>
+        <!-- button categories -->
+        <nav id="categories" class="flex justify-center items-center gap-4"></nav>
+        <!-- videos categories -->
+        <main id="videos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4 py-12">
+        </main>
     </header>
 </body>
 <script src="main.js"></script>
+<script src="./scripts/video.js"></script>
 
 </html>
