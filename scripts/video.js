@@ -86,11 +86,9 @@ const displayVideos = (videos) => {
   videoContainer.innerHTML = "";
   if (videos.length === 0) {
     videoContainer.innerHTML = `
-        <div class="text-center text-2xl font-bold">
-          <div class="flex justify-center items-center">
-            <img src="./assets/Icon.png" alt="no-content" class="w-1/2" />
-          </div>
-          <p class="text-xl font-bold">Oops! No videos found</p>
+         <div class="flex items-center justify-center flex-col absolute top-1/2 left-1/2 -translate-x-1/2 ">
+          <img src="./assets/Icon.png" alt="no-content" class="w-1/2 mb-2" />
+          <p class="text-[2rem] font-bold text-center">Oops! No videos found</p>
         </div>`;
     return;
   }
@@ -151,7 +149,7 @@ const displayVideos = (videos) => {
               </span>
               <p>${video.others.views} views</p>
             </div>
-            <div class="absolute top-0 left-0 rounded-xl opacity-0 hover:opacity-100 transition-all duration-300 w-full h-full flex justify-center items-center z-[999] bg-[#00000090]">
+            <div class="absolute top-0 left-0 rounded-xl opacity-0 hover:opacity-100 transition-all duration-300 w-full h-full flex justify-center items-center z-[99] bg-[#00000090]">
               <button onclick="handleDetails('${
                 video.video_id
               }')" class="btn btn-circle px-8 text-white btn-outline">
